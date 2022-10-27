@@ -1,0 +1,24 @@
+////////RATING///////
+.stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 2rem;
+  &::before {
+      content: "\f005 \f005 \f005 \f005 \f005";
+  }
+}
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  font-size: 2rem;
+  &::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    color: $text-color-red;
+    font-weight: 900;
+  }
+}

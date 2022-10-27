@@ -1,0 +1,65 @@
+
+.Banniere-home {
+    width: 100%;
+    height: 15rem;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #595959;
+    background-blend-mode: overlay;
+    background-size: 100% 100%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 600px) {
+        height: 12rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        justify-content: flex-start;
+        background-size: cover;
+    }
+    
+    &__titre {
+        color: $text-color-white;
+        font-weight: 500;
+        font-size: 2.4rem;
+
+        @media screen and (max-width: 600px) {
+            margin-left: 2rem;
+            width: 75%;
+        }
+    }
+}
+.banniere-about {
+    width: 100%;
+    height: 15rem;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #595959;
+    background-blend-mode: overlay;
+    background-size: 100% 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 600px) {
+        height: 25rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        justify-content: flex-start;
+        background-size: cover;
+        background-position: right;
+    }
+    
+    
+    &__titre {
+        color: $text-color-white;
+        font-weight: 500;
+        font-size: 2.4rem;
+    }
+}

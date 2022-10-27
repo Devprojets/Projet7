@@ -1,0 +1,52 @@
+//////HEADER//////
+.header {
+    height: 10vh;
+    margin: 0rem 5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+
+    &__logo {
+        width: 80%;
+        img {
+            width: 20rem;
+        }
+    }
+
+    &__links {
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color : $text-color-red;
+        font-weight: 500;
+        font-size: 1.6rem;
+
+         a:hover {
+            text-decoration: underline;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        margin: 0 auto;
+        width: 110rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+    margin: 0rem 1.5rem 0 1.5rem;
+    &__logo {
+        width: 55%;
+        img {
+            width: 13rem;
+        }
+    }
+    &__links {
+        width: 45%;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+
+    }
+}
+}

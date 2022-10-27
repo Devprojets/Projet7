@@ -1,0 +1,68 @@
+//////Logements PAGE///////
+.Logements-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+
+    &__left-side {
+       &__titre {
+        font-weight: 500;
+        font-size: 2rem;
+    } 
+    &__location {
+        margin-top: .5rem;
+        margin-bottom: 2rem;
+    }
+    }
+
+    &__right-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        &__host-info {
+            display: flex;
+            align-items: center;
+            margin-top: -1rem;
+        @media screen and (max-width: 600px) {
+            margin-top: 0;
+            order: 2;
+        }
+
+        }
+
+        &__host {
+            margin-right: .5rem;
+            line-height: 2rem;
+        }
+        &__host__firstname {
+            text-align: end;
+        }
+        &__host__lastname {
+            text-align: end;
+        }
+
+        img {
+            border-radius: 100px;
+            width: 5rem;
+        }
+    }
+}
+
+.ratings {
+    margin-top: 2rem;
+        @media screen and (max-width: 600px) {
+            margin-top: 0;
+        }
+
+}
